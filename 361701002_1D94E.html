@@ -1,0 +1,120 @@
+<html>
+        <head>  
+                <title>UAS Desain Web</title>
+        </head>
+        
+        <script type="text/javascript">
+            
+                var nama   = parseFloat(document.page.nama.value);
+                var nip   = parseFloat(document.page.nip.value);
+                var status   = parseFloat(document.page.status.value);
+                
+                var janak   = parseFloat(document.page.janak.value);
+                var jcuti   = parseFloat(document.page.jcuti.value);
+                function data(){
+                var jabatan1 = document.getElementById("jabatan").select1.value;
+                var gajipokok = document.getElementById("gajipokok");
+                
+                    if (jabatan1 == "kepalabagian");
+                        {
+                            gajipokok = 5000000;
+                        }
+                    else if (jabatan1 == "manajer");
+                        {
+                            gajipokok = 3000000;
+                        }
+                    else if(jabata1 == "pegawai")
+                        {
+                            gajipokok = 1000000;
+                        }                            
+
+
+                }
+                
+                    if(status="menikah");
+                        {
+                            gajimenikah = gajipokok*0.15;
+                        }
+                    else
+                        {
+                            gajimenikah = gajipokok;
+                        }
+                }
+
+                    if (janak=1);
+                        {
+                            gajianak = gajipokok*0.05;
+                        }
+                    else if(janak=2);
+                        {
+                            gajianak = gajipokok*0.1;
+                        }
+                    else
+                        {
+                            gajianak = gajipokok*0.1;
+                        }
+                }
+                    var gajicuti = gajipokok-(10000*jcuti);
+                   var gajitotal= gajicuti+gajipokok+gajimenikah+gajianak;  
+                
+
+                 
+        </script>
+        <body bgcolor="cian"></body>
+        <form name="page">
+                <h1 align="center" >SEKOLAH TINGGI MANAJEMEN INFORMASI DAN KOMPUTER </h1>
+                    <table border="0">
+                        <tr>
+                            <td>Nama</td>
+                            <td>:</td>
+                            <td><input type="text" size="30" name="nama"></td>
+                        </tr>
+                        <tr>
+                            <td>NIP</td>
+                            <td>:</td>
+                            <td><input type="text" size="30" name="nip"></td>
+                        </tr>
+                        <tr>
+                            <td>Golongan</td>
+                            <td>:</td>
+                            <td><select id="select1" name="jabatan1">
+                                    <option value="kepalabagian">Kepala Bagian</option>
+                                    <option value="manajer">Manajer</option>
+                                    <option value="pegawai">Pegawai</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Golongan</td>
+                            <td>:</td>
+                            <td><select id="select2" name="status">
+                                    <option value="menikah">Menikah</option>
+                                    <option value="bmenikah">Belum Menikah</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jumlah Anak</td>
+                            <td>:</td>  
+                            <td><input type="number" size="5" name="janak"></td>  
+                        </tr>
+                        <tr>
+                            <td>Jumlah Cuti</td>
+                            <td>:</td>  
+                            <td><input type="number" size="5" name="jcuti"></td>  
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td><input  type="button" value="Hitung Gaji" size="20px" onclick="data()"></td>
+                        </tr>
+                        <tr>
+                                <td>Total Gaji</td>
+                                <td>:</td>
+                                <td><input type="text" size="30" name="gajitotal"></td>
+                           
+
+                        </tr>
+                    </table>
+                   
+</html>
