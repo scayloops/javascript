@@ -1,0 +1,156 @@
+<html>
+<head><title>Perhitungan Nilai Mahasiswa</title></head>
+<body>
+    <p><script language="javascript">
+<!--
+function jumlah()
+{
+    var nama=String (document.fform.nama.value);
+    var bil1=parseFloat (document.fform.bilangan1.value);
+    if (isNaN(bil1))
+        bil1=0.0;
+    var bil2=parseFloat (document.fform.bilangan2.value);
+    if (isNaN(bil2))
+        bil2=0.0;
+    var bil3=parseFloat (document.fform.bilangan3.value);
+    if (isNaN(bil3))
+        bil3=0.0;
+        var Nilai_Akhir=(((2*bil1) + (3*bil2) + (5*bil3))/10)
+    nama + " Nilai Akhir Anda = " + Nilai_Akhir;
+
+
+    var nama1=String (document.fform.nama1.value);
+        var bil1a=parseFloat (document.fform.bilangan1a.value);
+    if (isNaN(bil1a))
+        bil1a=0.0;
+    var bil2a=parseFloat (document.fform.bilangan2a.value);
+    if (isNaN(bil2a))
+        bil2a=0.0;
+    var bil3a=parseFloat (document.fform.bilangan3a.value);
+    if (isNaN(bil3a))
+        bil3a=0.0;
+
+    var Nilai_Akhira=(((2*bil1a) + (3*bil2a) + (5*bil3a))/10)
+    nama1 + " Nilai Akhir Anda = " + Nilai_Akhira;
+
+
+    var nama2=String (document.fform.nama2.value);
+        var bil1b=parseFloat (document.fform.bilangan1b.value);
+    if (isNaN(bil1b))
+        bil1b=0.0;
+    var bil2b=parseFloat (document.fform.bilangan2b.value);
+    if (isNaN(bil2b))
+        bil2b=0.0;
+    var bil3b=parseFloat (document.fform.bilangan3b.value);
+    if (isNaN(bil3b))
+        bil3b=0.0;
+
+    var Nilai_Akhirb=(((2*bil1b) + (3*bil2b) + (5*bil3b))/10)
+    nama2 + " Nilai Akhir Anda = " + Nilai_Akhirb;
+    if(Nilai_Akhir>=80)
+        {
+        (grade = "A" );
+        }
+        else if (Nilai_Akhir>=70)
+        {
+        (grade = "B" );
+        }
+        else if (Nilai_Akhir>=59)
+        {
+        (grade = "C" );
+        }
+        else if (Nilai_Akhir>=49)
+        {
+        (grade = "D" );
+        }
+        else
+        {
+        (grade = "E" );
+        }
+        
+
+        if(Nilai_Akhira>=80)
+        {
+        (gradea = "A" );
+        }
+        else if (Nilai_Akhira>=70)
+        {
+        (gradea = "B" );
+        }
+        else if (Nilai_Akhira>=59)
+        {
+        (gradea = "C" );
+        }
+        else if (Nilai_Akhira>=49)
+        {
+        (gradea = "D" );
+        }
+        else
+        {
+        (gradea = "E" );
+        }
+
+
+        if(Nilai_Akhirb>=80)
+        {
+        (gradeb = "A" );
+        }
+        else if (Nilai_Akhirb>=70)
+        {
+        (gradeb = "B" );
+        }
+        else if (Nilai_Akhirb>=59)
+        {
+        (gradeb = "C" );
+        }
+        else if (Nilai_Akhirb>=49)
+        {
+        (gradeb = "D" );
+        }
+        else
+        {
+        (gradeb = "E" );
+        }   
+        location.reload();
+        
+        document.writeln("<table border='1'")
+        document.writeln("<tr>")
+        document.writeln("<td>Nama</td> <td>Nilai Tugas</td> <td>Nilai UTS</td> <td>Nilai UAS</td> <td>Nilai Rata-rata</td> <td>Grade</td>")
+        document.writeln("</tr>")
+        document.writeln("<tr>")
+        document.writeln("<td>" + nama + "</td> <td>" + bil1 + "</td> <td>" + bil2 + "</td> <td>" + bil3 + "</td> <td>" + Nilai_Akhir + "</td> <td>" + grade + "</td>")
+        document.writeln("</tr>")
+        document.writeln("<tr>")
+        document.writeln("<td>" + nama1 + "</td> <td>" + bil1a + "</td> <td>" + bil2a + "</td> <td>" + bil3a + "</td> <td>" + Nilai_Akhira + "</td> <td>" + gradea + "</td>")
+        document.writeln("</tr>")
+        document.writeln("<tr>")
+        document.writeln("<td>" + nama2 + "</td> <td>" + bil1b + "</td> <td>" + bil2b + "</td> <td>" + bil3b + "</td> <td>" + Nilai_Akhirb + "</td> <td>" + gradeb + "</td>")
+        document.writeln("</tr>")
+}
+//--></script></p>
+<FORM NAME="fform">
+    <H1><BR>Masukkan Nilai Anda : </H1>
+    <PRE>
+        Nama             :<input type="text" size="11" name="nama">
+        Nilai Tugas      :<input type="text" size="11" name="bilangan1">
+        Nilai UTS        :<input type="text" size="11" name="bilangan2">
+        Nilai UAS        :<input type="text" size="11" name="bilangan3">
+    </PRE>
+    <PRE>
+        Nama             :<input type="text" size="11" name="nama1">
+        Nilai Tugas      :<input type="text" size="11" name="bilangan1a">
+        Nilai UTS        :<input type="text" size="11" name="bilangan2a">
+        Nilai UAS        :<input type="text" size="11" name="bilangan3a">
+    </PRE>
+    <PRE>
+        Nama             :<input type="text" size="11" name="nama2">
+        Nilai Tugas      :<input type="text" size="11" name="bilangan1b">
+        Nilai UTS        :<input type="text" size="11" name="bilangan2b">
+        Nilai UAS        :<input type="text" size="11" name="bilangan3b">
+    </PRE>
+    <P>
+        <input type="button" value="jumlahkan" onclick="jumlah()">
+        <input type="reset" value="ulang">
+    </FORM>
+</BODY>
+</HTML>

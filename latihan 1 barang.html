@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1><font face="Algerian">Javascript</font></h1>
+    <script language="Javascript">
+        var harga1, jumlah1, subtotal1, harga2, jumlah2, subtotal2, harga3, jumlah3, subtotal3, total;
+
+        harga1 = prompt("Cantumkan Harga Kemeja: ", "");
+        jumlah1 = prompt("Masukkan Jumlah Kemeja: ", "");
+        subtotal1 = harga1 * jumlah1;
+        prompt("Hasilnya : ", subtotal1);
+
+        harga2 = prompt("Cantumkan Harga Celana: ", "");
+        jumlah2 = prompt("Masukkan Jumlah Celana: ", "");
+        subtotal2 = harga2 * jumlah2;
+        prompt("Hasilnya : ", subtotal2);
+
+        harga3 = prompt("Cantumkan Harga Sepasang Sepatu: ", "");
+        jumlah3 = prompt("Masukkan Jumlah Sepasang Sepatu: ", "");
+        subtotal3 = harga3 * jumlah3;
+        prompt("Hasilnya : ", subtotal3);
+
+        total = subtotal1 + subtotal2 + subtotal3;
+
+        document.writeln("<center><table border='1'</center> ")
+        document.writeln("<tr>")
+        document.writeln("<th>Nama</th> <th>Harga</th> <th>Jumlah</th> <th>SubTotal</th>")
+        document.writeln("</tr>")
+        document.writeln("<tr>")
+        document.writeln("<td>Kemeja</td> <td>" + harga1 + "</td> <td>" + jumlah1 + "</td> <td>" + subtotal1 +
+            "</td > ")
+        document.writeln("</tr>")
+        document.writeln("<tr>")
+        document.writeln("<td>Celana</td> <td>" + harga2 + "</td> <td>" + jumlah2 + "</td> <td>" + subtotal2 +
+            "</td > ")
+        document.writeln("</tr>")
+        document.writeln("<tr>")
+        document.writeln("<td>Sepasang Sepatu</td> <td>" + harga3 + "</td> <td>" + jumlah3 + "</td> <td>" + subtotal3 +
+            "</td > ")
+        document.writeln("</tr>")
+        document.writeln("<tr>")
+        document.writeln("<td></td> <td></td> <td>TOTAL</td> <td>" + total + "</td>")
+        document.writeln("</tr>")
+    </script>
+
+</body>
+
+</html>

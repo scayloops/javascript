@@ -1,0 +1,73 @@
+<html>
+<head><title>Perhitungan Nilai Mahasiswa</title></head>
+<body>
+    <p><script language="javascript">
+<!--
+function jumlah()
+{
+    var nilai_tugas=parseFloat(document.fform.bilangan1.value);
+    var nilai_uts=parseFloat(document.fform.bilangan1.value);
+    var nilai_uas=parseFloat(document.fform.bilangan1.value);
+    
+
+    var bil1=parseFloat (document.fform.bilangan1.value);
+    if (isNaN(bil1))
+        bil1=0.0;
+    var bil2=parseFloat (document.fform.bilangan2.value);
+    if (isNaN(bil2))
+        bil2=0.0;
+    var bil3=parseFloat (document.fform.bilangan3.value);
+    if (isNaN(bil3))
+        bil3=0.0;
+    var Nilai_Akhir=(((2*bil1) + (3*bil2) + (5*bil3))/10)
+    ("Nilai Akhir Anda = " +nama + Nilai_Akhir);
+    if(Nilai_Akhir>=80)
+        {
+        ("A = Selamat Anda LULUS" );
+        }
+        else if (Nilai_Akhir>=70)
+        {
+        ("B = Selamat Anda LULUS" );
+        }
+        else if (Nilai_Akhir>=59)
+        {
+        ("C = Selamat Anda LULUS");
+        }
+        else if (Nilai_Akhir>=49)
+        {
+        ("D = Anda TIDAK LULUS");
+        }
+        else
+        {
+        ("E = Anda TIDAK LULUS");
+        }   
+        location.reload();
+        document.writeln("<TABLE BORDER='1'")
+		document.writeln("<TR>")
+		document.writeln("<TD>Nama</TD><TD>Nilai Tugas</TD><TD>Nilai UTS</TD><TD>Nilai UAS</TD><TD>Nilai Rata-Rata</TD>")
+		document.writeln("</TR>")
+		document.writeln("<TR>")
+		document.writeln("<TD>"+nama+"</TD><TD>"+nilai+"</TD><td>"+bilangan2+"</td><td>"+bilangan3+"</td><TD>"+Nilai_akhir+"</td>")
+		document.writeln("</TR>")
+}
+
+        
+		
+</script></p>
+<FORM NAME="fform">
+    <H1><BR>Masukkan Nilai Anda : </H1>
+    <PRE>
+        Nama             :<input type="text" size="11" name="nama">
+        Nilai Tugas      :<input type="text" size="11" name="bilangan1">
+        Nilai UTS        :<input type="text" size="11" name="bilangan2">
+        Nilai UAS        :<input type="text" size="11" name="bilangan3">
+    </PRE>
+    <P>
+        <input type="button" value="jumlahkan" onclick="jumlah()">
+        <input type="reset" value="ulang">
+    </FORM>
+
+
+
+</BODY>
+</HTML>
